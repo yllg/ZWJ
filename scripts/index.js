@@ -19,7 +19,7 @@ function calculateRadius(length, totalNum) {
 }
 
 //音乐的播放和暂停
-$('#music').on('tap', function(e) {
+$('#music').on('click', function(e) {
 	if (audio.paused) {
 		audio.play();
 		$('#music').text('♫');
