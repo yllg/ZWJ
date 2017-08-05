@@ -68,7 +68,7 @@ window.addEventListener('deviceorientation', function(event) {
 	//获得手机旋转的gamma，如果手机转则box也旋转，同时flag为false禁止手指拖动了
 	//也就是手机Y轴转超过60度的时候，手碰它是没有用的。
 	var gamma = event.gamma;
-	if (Math.abs(gamma) > 20) {
+	if (Math.abs(gamma) > 60) {
 		flag = false;
 		var gammaY = x +gamma;
 		box.style.transform = 'rotateY(' + gammaY + 'deg)';
